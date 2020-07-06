@@ -25,7 +25,7 @@ The Static data will be automatically loaded from the files, and a worker will b
 To GET a vehicle for a given time and X & Y coordinates (if you are running dev mode, first request takes a few seconds as it loads the static data and starts consumer)
 
 ```bash
-(local time is acquired automatically)
+# (local time is acquired automatically in case query param not provided)
 http://localhost:8081/v1/publicTransport/vehicleForStop/1?time=05:00:00
 {"lineName":"M4","stopId":1,"time":"05:01"}
 ```
@@ -33,6 +33,7 @@ http://localhost:8081/v1/publicTransport/vehicleForStop/1?time=05:00:00
 Likewise, you can also GET directly from the stopId:
 
 ```bash
+# (local time is acquired automatically in case query param not provided)
 curl http://localhost:8081/v1/publicTransport/vehicleForLocation/1/1?time=05:00:00
 {"lineName":"M4","stopId":0,"time":"05:00"}
 ```
