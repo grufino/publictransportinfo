@@ -1,4 +1,4 @@
-# Mobimeo Data Team Engineering Challenge
+# Data Engineering Challenge
 
 ## Problem
 
@@ -42,7 +42,3 @@ Endpoints should be available via port `8081`
 Please complete the challenge in Scala. You're free to use frameworks or libraries of your choice.
 
 Make sure to follow general software development best practices and best practices of the respective language.
-
-## Delivery
-
-Create a git repository and share the code with us through GitHub or zip file.

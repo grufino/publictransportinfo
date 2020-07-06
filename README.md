@@ -2,7 +2,7 @@
 
 Because the dataset is small and there are no requirements about persistence I chose to save CSV data in spark in memory, to also be a little faster to bootstrap, tho a scalable solution for this data model would probably involve a RDBMS and a chache layer.
 
-Note: I realized when I was almost done that storing the delay on the stop dataframe instead of the time dataframe would be a smarter decision, since delays are not associated to time but to a stop... A lot would have to change so I decided to leave it like this to not spend so much time. 
+Note: I realized when I was almost done that storing the delay on the stop dataframe instead of the time dataframe would be a smarter decision, since delays are not associated to time but to a stop (not so easy to change), also I assumed that delays don't stack up but maybe this was a wrong assumption, no details were provided (easy to change). 
 
 Note 2: I know polling instead of subscribing to a topic and also auto committing are not the best practices, but we are not on concurrent threads so for the sake of the example I guess that's ok.
 
